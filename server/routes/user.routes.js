@@ -19,7 +19,7 @@ router.post(
   validate(signUpSchema),
   signUpUser
 );
-router.post("/sing-in", validate(signInSchema), signInUser);
+router.post("/sign-in", validate(signInSchema), signInUser);
 
 router.post("/sign-out", signOut);
 

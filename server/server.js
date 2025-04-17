@@ -36,8 +36,5 @@ app.use(errorHandler);
 // Export app for testing
 export default app;
 
-// Connect DB and start the server (this part only runs in production or dev environment)
-if (process.env.NODE_ENV !== "test") {
-  // Connect DB and start server
-  connectDB(app); // This will listen on the provided PORT in production or dev environment
-}
+// Connect Databased
+connectDB(app);
